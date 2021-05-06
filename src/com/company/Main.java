@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-      tryCatch();
+      Item11.checkHashCode();
     }
 
     public static void tryCatch() {
