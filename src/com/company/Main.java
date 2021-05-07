@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-      Item11.checkHashCode();
+      Item10.checkEquals();
     }
 
     public static void tryCatch() {
       try {
-        Item9.tryFinally();
+        Item9.tryFinallyWithGoodStream();
       } catch (Exception ex) {
         System.out.println("Error message " + ex);
         System.out.println("Suppressed message " + Arrays.toString(ex.getSuppressed()));
@@ -20,7 +20,7 @@ public class Main {
     public static void timingMethods() {
       long startTime = System.nanoTime();
 
-      Item6.unboxingCorrect();
+      Item6.unboxing();
 
       long endTime = System.nanoTime();
       long duration = (endTime - startTime);
